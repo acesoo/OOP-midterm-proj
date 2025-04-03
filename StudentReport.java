@@ -79,18 +79,18 @@ class Student {
         parents.add(parent);
     }
 
-    public void printReport() {
-        System.out.println("Student id is " + id);
-        System.out.println("Student name is " + lastName.toUpperCase() + ", " + firstName);
-        System.out.println("Studying " + degree.name);
+    public void printReport(PrintWriter writer) {
+        writer.println("Student id is " + id);
+        writer.println("Student name is " + lastName.toUpperCase() + ", " + firstName);
+        writer.println("Studying " + degree.name);
         
         for (Address addr : addresses) {
-            System.out.println(addr);
+            writer.println(addr);
         }
         for (Parent par : parents) {
-            System.out.println(par);
+            writer.println(par);
         }
-        System.out.println();
+        writer.println();
     }
 }
 
@@ -119,13 +119,20 @@ public class StudentReport {
             // Process Parents
             processParent(students);
 
-            // Print Report
-            for (Student s : students) {
-                s.printReport();
-            }
+            // Write Report to a file
+            PrintWriter writer = new PrintWriter(new FileWriter("D:\\bralp\\Documents\\StudentReport.txt"));
             
+            for (Student s : students) {
+                s.printReport(writer);
+            }
+
+            writer.close();
+            System.out.println("Report successfully written to StudentReport.txt");
+
         } catch (FileNotFoundException e) {
             System.out.println("Error: File not found!");
+        } catch (IOException e) {
+            System.out.println("Error writing to the file!");
         }
     }
 
@@ -173,4 +180,3 @@ public class StudentReport {
         }
     }
 }
-
