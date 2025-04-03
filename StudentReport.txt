@@ -1,0 +1,29 @@
+Student id is 1234
+Student name is SMITH, John
+Studying BS Computer Science
+City address is 9 Central Ave. QC
+Provincial address is 356 Rizal Ave. Cabanatuan City
+Mother's name is Susan Smith
+Father's name is Rex Smith
+Guardian's name is Allysa Cruz
+
+Student id is 1235
+Student name is OLIVEROS, Sarah
+Studying BS Industrial Engineering
+City address is B8 L30 Villa Olympia Cainta Rizal
+Guardian's name is Stephanie dela Cruz
+
+Student id is 1236
+Student name is FLAMENIO, Nancy
+Studying BS Computer Science
+City address is 12 Pilapil St. San Miguel Pasig City
+Father's name is Arnold Flamenio
+Mother's name is Trisha Flamenio
+
+Student id is 1237
+Student name is BERNARDO, Bernard
+Studying BS Electronics Engineering
+City address is 45 Maharlika Ave. Quezon City
+Provincial address is 143 Mahal Kita Road Bayombong Nueva Viscaya
+Guardian's name is Teresita Uy
+
